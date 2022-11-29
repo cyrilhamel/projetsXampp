@@ -37,11 +37,14 @@ let tabT;
             return tabT[1] * 1;
         }
     }
+    
 }
+
 let counter = 1
 if (document.cookie.includes("nbVisit")){
     counter = compteur("nbVisit");
     counter++;
+   
 }
 document.cookie="nbVisit="+ counter;
 console.log(counter);
@@ -50,6 +53,8 @@ function reset(){
     let counter = 1
     document.cookie="nbVisit="+ counter;
 }
-
-
+function setup(){
+let p = document.getElementsByTagName('p')[0];
+p.style.color= "blue"; p.textContent=(counter);
+}
 
