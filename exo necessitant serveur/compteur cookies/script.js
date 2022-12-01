@@ -40,7 +40,7 @@ let tabT;
     
 }
 
-let counter = 1
+let counter=1;
 if (document.cookie.includes("nbVisit")){
     counter = compteur("nbVisit");
     counter++;
