@@ -26,13 +26,12 @@ function newElement() {
   li.setAttribute('id','tache'+compteur)
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Vous devez entrer une nouvelle tache");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
   let texte = document.getElementById("myInput").value;
-
-  document.cookie = "tache"+compteur+"="+texte;
+  document.cookie = "tache"+compteur+"="+texte;"max-age=86400";
   console.log(document.cookie);
 
   let span = document.createElement("SPAN");

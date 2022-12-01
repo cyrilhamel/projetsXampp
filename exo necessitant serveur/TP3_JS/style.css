@@ -1,0 +1,39 @@
+html {
+    background-color: cadetblue;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .affich{
+    text-align: center;
+    font-size: 100px;
+    background-color: black;
+    color: red;
+    margin-bottom: 80px;
+  }
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+  #start{
+    background-color: green;
+    color: white;
+    margin-left: 15px;
+    font-size: 40px;
+  }
+  #stop{
+    background-color: red;
+    color: white;
+    margin-left: 15px;
+    font-size: 40px;
+  }
+  #reset{
+    background-color: yellow;
+    margin-left: 15px;
+    font-size: 40px;
+  }
